@@ -1,4 +1,4 @@
-import CampsitesList from './features/campsites/CampsitesList';
+import CampsiteDirectoryPage from './pages/CampsitesDirectoryPage';
 // import React from 'react';
 // import { Container, Navbar, NavbarBrand } from 'reactstrap';
 // import NucampLogo from './app/assets/img/logo.png';
@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      <CampsitesList/>
+      <CampsiteDirectoryPage/>
       <Footer/>
     </div>
   );
