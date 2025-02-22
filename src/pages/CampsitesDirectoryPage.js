@@ -5,7 +5,7 @@ import { selectCampsiteById } from '../features/campsites/campsitesSlice';
 import { useState } from 'react';
 
 
-const CampsiteDirectoryPage = () => {
+const CampsitesDirectoryPage = () => {
 const [campsiteId, setCampsiteId] = useState(0);
 const selectedCampsite = selectCampsiteById(campsiteId);
 
@@ -23,4 +23,4 @@ const selectedCampsite = selectCampsiteById(campsiteId);
     );
 };
 
-export default CampsiteDirectoryPage;
+export default CampsitesDirectoryPage;
