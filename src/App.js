@@ -7,6 +7,7 @@ import CampsitesDirectoryPage from './pages/CampsitesDirectoryPage';
 // import NucampLogo from './app/assets/img/logo.png';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import CampsiteDetailPage from './pages/CampsiteDetailPage';
 import './App.css';
 import { Form } from 'reactstrap';
 
@@ -18,6 +19,7 @@ function App() {
         <Route path='/' element={<HomePage />} />
         <Route path='contact' element={<ContactPage />} />
         <Route path='directory' element={<CampsitesDirectoryPage />}/>
+        <Route path='directory/:campsiteId' element={<CampsiteDetailPage />} />
       </Routes>
       <Footer/>
     </div>
