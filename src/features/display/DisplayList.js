@@ -7,11 +7,11 @@ import { selectFeaturedPartner } from "../partners/partnersSlice";
 import { useSelector } from "react-redux";
 
 const DisplayList = () =>{
-    const items = useSelector((state) => [
-        selectFeaturedCampsite(state),
+    const items = useSelector((state) => {
+        return [ selectFeaturedCampsite(state.counter),
         selectFeaturedPromotion(state),
         selectFeaturedPartner(state)
-    ]);
+]});
 
     console.log('display items:', items);
 
