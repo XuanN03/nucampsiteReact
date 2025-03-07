@@ -8,7 +8,7 @@ import { useSelector } from "react-redux";
 
 const DisplayList = () =>{
     const items = useSelector((state) => {
-        return [ selectFeaturedCampsite(state.counter),
+        return [ selectFeaturedCampsite(state),
         selectFeaturedPromotion(state),
         selectFeaturedPartner(state)
 ]});
