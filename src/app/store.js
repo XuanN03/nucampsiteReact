@@ -3,6 +3,6 @@ import { campsitesReducer } from '../features/campsites/campsitesSlice';
 
 export const store = configureStore({
   reducer: {
-    counter: campsitesReducer,
+    campsites: campsitesReducer,
   },
 });
