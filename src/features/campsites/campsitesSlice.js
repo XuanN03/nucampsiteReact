@@ -11,11 +11,10 @@ const campsitesSlice = createSlice({
 });
 
 
-
 export const campsitesReducer = campsitesSlice.reducer;
 
 export const selectAllCampsites = (state) => {
-    return state.campsitesArray;
+    return state.campsites.campsitesArray;
 };
 
 // export const selectRandomCampsite = () => {
@@ -23,13 +22,13 @@ export const selectAllCampsites = (state) => {
 // };
 
 export const selectCampsiteById = (id) => (state) => {
-    return state.campsitesArray.find(
+    return state.campsites.campsitesArray.find(
         (campsite) => campsite.id === parseInt(id)
     );
 };
 
 export const selectFeaturedCampsite = (state) => {
-    return state.campsitesArray.find((campsite) => campsite.featured);
+    return state.campsites.campsitesArray.find((campsite) => campsite.featured);
 };
 
 
